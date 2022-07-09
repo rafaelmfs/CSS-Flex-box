@@ -1,0 +1,48 @@
+html,
+body,
+#app{
+    height: 100%;
+    margin: 0;
+}
+
+#app{
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; - iniciando da direita para esquerda*/
+    /* flex-direction: column-reverse; - iniciando de baixo pra cima */
+    /* align-items: center; Alinhamento vertical valores: flex-start, center, flex-end */
+    /* justify-content: space-around; /* Alinhamento horizontal valores: flex-start, center, flex-end,
+    space-between para colocar um espçamento igual entre os elementos mas sem nenhum espaço em volta deles e space-around para colocar um espaço entre os elementos e em volta deles */
+    /* O align items alinha os elementos no eixo contrario do flex direction e o justify-content alinha no mesmo eixo */
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: space-around; */
+    /*flex-wrap: wrap; /*É utilizando quando você precisa que os elementos quebre a linha, tem o wrap-reverse também para pegar ao contrário, então se não couber todos no container ele vai pra linha debaixo e então podemos utilizar a propriedade align content para alinhar esses elementos. */
+    /*align-content: center; /*É para alinhar o conteúdo quando tem quebra de linha, ele tem as mesmas propriedades do justify content */
+}
+
+.box {
+    width: 200px;
+    height: 60px;
+    background: #f00;
+    margin: 5px;
+    /*flex-grow: 1; /* Elemento aumentar para caber no container */ 
+    /*flex-shrink: 1; /* Elemento se espremer para caber no container */ 
+    /*flex: 1; /*São as duas propriedades, shrink e grow juntas se o elemento puder se aumentar e espremer é só colocar o numero 1*/
+
+}
+
+.red{
+    order: 1; /* Ordenar os elementos dentro do display flex */
+}
+
+.green{
+    background: #0f0;
+    order: 2;
+
+}
+
+.blue{
+    background: #00f;
+    order: 0;
+}
