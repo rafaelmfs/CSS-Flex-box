@@ -1,0 +1,10 @@
+{
+    "editor.defaultFormatter": null,
+    "editor.tabSize": 2,
+    "[html]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    }
+}
